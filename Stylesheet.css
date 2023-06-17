@@ -1,0 +1,249 @@
+
+body {
+  background-image:url(tech.jpg);
+  text-align:center;
+}
+
+p {
+  color:#013220;
+  text-align:center;
+  
+}
+
+
+h1 {
+  
+font-size:50px;
+color:white;
+}
+
+h2 {
+  text-align:center;
+  font-size: 30px;
+  color:white;
+  
+}
+
+
+h1,h3, img{
+ padding-right:170px;
+ height:auto;
+}
+
+form{
+  text-align: center;
+}
+
+a{
+ text-decoration:none;
+ color:black;
+}
+
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: beige;
+  position: fixed;
+  height: 1000px;
+  overflow: auto;
+ 
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 48px;
+  text-decoration: none;
+  font-size: 20px;
+ 
+  
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #000080;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: lightblue;
+  color: blue;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1200px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+   
+    
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+    
+  }
+}
+
+
+table,th,td{
+  border: 2px solid black;
+  color:black;
+  background-color:beige;
+  width:800px;
+  height:100px;
+  font-size:25px;
+}
+
+
+.button {
+  background-color: gold;
+  border: solid black;
+  color: black;
+  padding: 12px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+}
+button:hover{background-color:white;}
+
+
+hr{
+  border:2px solid red;
+}
+
+
+
+#cover{
+width: 800px;
+height:145px;
+background-color:#7DEDF5;
+margin-left:auto;
+margin-right:auto;
+transition:2s;
+border:1px solid black;
+}
+/*transitions to background color gold*/
+#cover:hover{
+  background-color:#012a4a;
+  color:white;
+}
+
+#team:hover{
+  background-color:#4b5320;
+  color:white;
+  
+}
+
+#skills:hover{
+  background-color:#800000;
+  color: white;
+}
+
+#team{
+width: 700px;
+height:90px;
+background-color:#77dd77;
+margin-left:auto;
+margin-right:auto;
+transition:1.5s;
+border:1px solid black;
+}
+
+#skills{
+width: 400px;
+height:120px;
+background-color:#ffcccb;
+margin-left:auto;
+margin-right:auto;
+transition:1.5s;
+border:1px solid black;
+}
+
+.center{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.contact{
+width: 500px;
+height:250px;
+background-color:#e3b778;
+margin-left:auto;
+margin-right:auto;
+border:1px solid black;
+}
+
+.column{
+  float: left;
+  width:50%;
+  
+  
+}
+
+.row::after{
+  content: "";
+  clear: both;
+  
+}
+
+.hide{
+  background-color:#c8a951;
+  width:230px;
+  height:30px;
+  font-size:20px;
+  color:white;
+  transition: 0.1s;
+  border: 3px solid #999;
+}
+
+.hide:hover{
+  background-color:#999;
+}
+
+.btn-group button{
+  background-color:gold;
+  border: solid black;
+  color: black;
+  padding: 12px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+}
+
+.btn-group button:not(:last-child){
+  border-right: none; /*Prevents double borders*/
+}
+
+.btn-group:after{
+  content: "";
+  clear: both;
+  display:table;
+  margin: auto;
+}
+
+.btn-group button:hover {
+  background-color: #eee;
+}
