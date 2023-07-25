@@ -47,9 +47,8 @@ a{
   width: 200px;
   background-color: beige;
   position: fixed;
-  height: 1000px;
+  height: 595px;
   overflow: auto;
- 
 }
 
 /* Sidebar links */
@@ -102,16 +101,6 @@ div.content {
     float: none;
     
   }
-}
-
-
-table,th,td{
-  border: 2px solid black;
-  color:black;
-  background-color:beige;
-  width:800px;
-  height:100px;
-  font-size:25px;
 }
 
 
@@ -180,11 +169,6 @@ transition:1.5s;
 border:1px solid black;
 }
 
-.center{
-  margin-left:auto;
-  margin-right:auto;
-}
-
 .contact{
 width: 500px;
 height:250px;
@@ -220,34 +204,6 @@ border:1px solid black;
   background-color:#f40808;
   transform: translateY(-10px) scale(1.1);
 }
-
-.btn-group button{
-  background-color:gold;
-  border: solid black;
-  color: black;
-  padding: 12px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: auto;
-}
-
-.btn-group button:not(:last-child){
-  border-right: none; /*Prevents double borders*/
-}
-
-.btn-group:after{
-  content: "";
-  clear: both;
-  display:table;
-  margin: auto;
-}
-
-.btn-group button:hover {
-  background-color: #eee;
-}
-
 .arrow {
   border: solid rgb(237, 234, 234);
   border-width: 0 3px 3px 0;
@@ -264,22 +220,101 @@ border:1px solid black;
 }
 
 .buy{
-  width: 500px;
-  height:200px;
+  width: 100px;
+  height:50px;
   background-color:#fae151;
   margin-left:auto;
   margin-right:auto;
   border:1px solid black;
+  cursor: pointer;
   }
 
-  .sell{
-    background-color: rgb(229, 42, 17);
-  color: rgb(241, 235, 235);
-  padding: 12px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: auto;
+  .cart{
+    width: 40px;
+    height:20px;
+    background-color:#fae151;
   }
-  
+
+  .container{
+    background-image:radial-gradient(rgb(246, 50, 50), rgb(232, 140, 26), rgb(238, 228, 108));
+    width: 350px;
+    height: 260px;
+    margin-left: 300px;
+    float: left;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  .container1{
+    background-image:radial-gradient(rgb(130, 220, 216), rgb(161, 226, 213), rgb(165, 223, 182));
+    width: 350px;
+    height: 260px;
+    float: right;
+    padding: 10px;
+    margin-right: 300px;
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  .container:hover,.container1:hover,.web-design:hover,.video-editing:hover,.photoshop:hover,.work2:hover,.work:hover,.work1:hover{
+    background: #c3c2c2;
+    transform: translateY(-10px);
+  }
+  .web-design{
+    width: 250px;
+    height: 350px;
+    background-image: linear-gradient(rgb(238, 129, 129), rgb(231, 201, 94));
+    float: left;
+    margin-left: 300px;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+  }
+ .video-editing{
+    width: 250px;
+    height: 350px;
+    background-image:linear-gradient(rgb(206, 206, 222), rgb(65, 75, 65));
+    float: right;
+    margin-right: 300px;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+  }
+  .photoshop{
+    width: 250px;
+    height: 350px;
+    background-image: linear-gradient(rgb(176, 176, 246), rgb(109, 227, 109));
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+  }
+  .work{
+    width: 350px;
+    height: 350px;
+    background-image: linear-gradient(rgb(55, 55, 65), rgb(204, 218, 204));
+    padding: 10px;
+    margin-left: 150px;
+    border-radius: 15px;
+    transition: 0.3s;
+    display:inline-block;
+  }
+  .work1{
+    width: 350px;
+    height: 350px;
+    background-image: linear-gradient(rgb(226, 98, 47), rgb(234, 195, 68));
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+    display: inline-block;
+    margin: 20px;
+  }
+  .work2{
+    width: 350px;
+    height: 350px;
+    background-image: linear-gradient(rgb(176, 176, 246), rgb(109, 227, 109));
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+    margin-right: 50px;
+    display: inline-block;
+  }
